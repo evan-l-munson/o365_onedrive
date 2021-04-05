@@ -24,7 +24,9 @@ stuff <- readxl::read_xlsx(path = "Stuff.xlsx")
 toy <- sample(x = 1:5, size = 10, replace = TRUE)
 toy_df <- as.data.frame(toy)
 
-xlsx::write.xlsx(x = toy_df, file = "toy_df.xlsx")
+xlsx::write.xlsx(x = toy_df, 
+                 file = "toy_df.xlsx")
 
 # Save toy_df.xlsx back to OneDrive
-elm_od$upload_file(src = "toy_df.xlsx", dest = "Projects/toy_df.xlsx")
+elm_od$upload_file(src = "toy_df.xlsx", 
+                   dest = "Projects/toy_df.xlsx")
